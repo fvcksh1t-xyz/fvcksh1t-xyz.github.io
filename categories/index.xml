@@ -1,25 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on fvcksh1t</title>
     <link>https://fvcksh1t-xyz.github.io/categories/</link>
     <description>Recent content in Categories on fvcksh1t</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>pt-br</language>
-    
-        <atom:link href="https://fvcksh1t-xyz.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>primeiro post</title>
-      <link>https://fvcksh1t-xyz.github.io/posts/primeiro/</link>
-      <pubDate>Fri, 19 Dec 2025 19:00:55 -0300</pubDate>
-      
-      <guid>https://fvcksh1t-xyz.github.io/posts/primeiro/</guid>
-      <description>&lt;h2 id=&#34;new-home&#34;&gt;new home&lt;/h2&gt;
-&lt;p&gt;nova casa, novo editor de texto, novo site, novo gerador de site&lt;/p&gt;
-&lt;p&gt;é isso, espero coisas boas, não só dessa nova fase, mas da minha vida, eu acho&lt;/p&gt;
-</description>
-    </item>
-    
+    <atom:link href="https://fvcksh1t-xyz.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
