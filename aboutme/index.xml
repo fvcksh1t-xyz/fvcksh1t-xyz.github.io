@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aboutmes on fvcksh1t</title>
+    <title>aboutme on fvcksh1t</title>
     <link>https://fvcksh1t-xyz.github.io/aboutme/</link>
-    <description>Recent content in Aboutmes on fvcksh1t</description>
+    <description>Recent content in aboutme on fvcksh1t</description>
     <generator>Hugo</generator>
     <language>pt-br</language>
     <atom:link href="https://fvcksh1t-xyz.github.io/aboutme/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>aboutme</title>
-      <link>https://fvcksh1t-xyz.github.io/aboutme/base/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fvcksh1t-xyz.github.io/aboutme/base/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
