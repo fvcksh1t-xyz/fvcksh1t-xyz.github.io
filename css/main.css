@@ -52,7 +52,18 @@ article {
 
 article:not(:last-of-type) {
   padding-bottom: 2em;
-  border-bottom: solid 1px var(--fg2);
+  position: relative;
+}
+
+article:not(:last-of-type)::after {
+  content: "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::";
+  letter-spacing: 2px;
+  color: var(--fg1);
+  font-family: monospace;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 2em;
 }
 
 .metadata {
@@ -93,6 +104,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  font-weight: bold;
 }
 
 pre code {
@@ -136,4 +148,21 @@ figcaption {
   margin-top: 1em;
   color: var(--fg2);
   text-align: center;
+}
+
+hr {
+  border: none;
+  text-align: center;
+  height: auto;
+  margin: 2em 0;
+}
+
+hr::before {
+  content: "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::";
+  letter-spacing: 2px;
+  color: var(--fg2);
+  font-family: monospace;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
 }
