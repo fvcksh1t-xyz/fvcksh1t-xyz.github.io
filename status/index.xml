@@ -4,8 +4,15 @@
     <title>status on fvcksh1t</title>
     <link>https://fvcksh1t-xyz.github.io/status/</link>
     <description>Recent content in status on fvcksh1t</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <atom:link href="https://fvcksh1t-xyz.github.io/status/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://fvcksh1t-xyz.github.io/status/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    
+    
+    
   </channel>
 </rss>

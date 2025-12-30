@@ -1,168 +1,127 @@
-/* @import url("vars.css"); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
 
-body {
-  display: flex;
-  min-height: 100dvh;
-  flex-direction: column;
-  margin: 0;
-
-  background-color: var(--bg1);
-  color: var(--fg1);
-  font-family: sans-serif;
-  line-height: 1.5;
-
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
-header,
-footer,
-thead,
-pre,
-code {
-  background-color: var(--bg2);
-}
-
-.navbar,
-main,
-.footer-content {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-left: 2em;
-  padding-right: 2em;
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-main {
-  flex: 1;
-  padding-top: 2em;
-  padding-bottom: 2em;
+html {
+  font-size: 62.5%;
+  width: 100%;
 }
 
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+body {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  color: #50fa7b;
+  background-color: #282a36;
+  width: 100%;
+  padding: 0 16px;
+  font-family: 'Fira Code', monospace !important;
+  word-break: break-word;
 }
 
-article {
-  margin-top: 2em;
+h1, h2, h3, h4, h5 {
+  line-height: 1.2;
+  color: #50fa7b;
+  font-size: 0.8em;
 }
 
-article:not(:last-of-type) {
-  padding-bottom: 2em;
-  position: relative;
-}
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 2.0rem; }
+h4 { font-size: 1.8rem; }
+h5 { font-size: 1.6rem; }
 
-article:not(:last-of-type)::after {
-  content: "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::";
-  letter-spacing: 2px;
-  color: var(--fg1);
-  font-family: monospace;
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  margin-top: 2em;
-}
-
-.metadata {
-  margin: 1em 0;
-}
-
-.tags {
-  list-style: none;
-  display: inline-flex;
-  gap: 0.5em;
-  margin: 0;
+.navbar ul {
+  list-style: none !important;
   padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
 }
 
-.tags a {
-  color: var(--fg2);
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  color: #50fa7b !important;
   text-decoration: none;
 }
 
-:is(h1, h2, h3, h4, h5, h6) .anchor {
-  visibility: hidden;
-}
-
-:is(h1, h2, h3, h4, h5, h6):hover .anchor {
-  visibility: visible;
-}
-
-p,
-li {
-  text-align: justify;
-  hyphens: auto;
+.navbar label[for="dropdown"], 
+.navbar #dropdown {
+    display: none !important;
 }
 
 a {
-  color: var(--link);
+  color: #50fa7b !important;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-pre code {
-  padding: 0;
-}
-
-code {
-  padding: 0.2em 0.3em;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td,
-th {
-  border: solid 1px;
-}
-
-td,
-th,
-pre {
-  padding: 1em;
-}
-
-pre,
-.katex {
-  overflow: auto;
-}
-
-figure {
-  margin: 0;
-}
-
-img {
-  width: 100%;
-}
-
-figcaption {
-  margin-top: 1em;
-  color: var(--fg2);
-  text-align: center;
+a:hover, 
+.navbar ul li a:hover, 
+main#content a:hover {
+  background-color: #50fa7b !important;
+  color: #282a36 !important;
 }
 
 hr {
-  border: none;
-  text-align: center;
-  height: auto;
+  border: none !important;
+  border-top: 1px solid #50fa7b !important;
+  height: 0;
   margin: 2em 0;
+  opacity: 0.6;
 }
 
-hr::before {
-  content: "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::";
-  letter-spacing: 2px;
-  color: var(--fg2);
-  font-family: monospace;
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
+blockquote {
+  background-color: #44475a;
+  border-left: 4px solid #50fa7b;
+  margin: 1.5em 10px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: flex-start; 
+  gap: 5px;
+}
+
+blockquote p {
+  margin: 0 !important;
+  display: inline;
+}
+
+blockquote::before {
+  content: ">";        
+  color: #50fa7b;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+pre {
+  border: 1px solid #6272a4;
+  background-color: #282a36;
+  padding: 8pt;
+  font-family: 'Fira Code', monospace !important;
+  overflow: auto;
+  margin: 1.2em;
+}
+
+footer#footer, footer .footer-content {
+  color: #6272a4;
+}
+
+footer#footer a {
+  color: #6272a4 !important;
+}
+
+main ul {
+  list-style: disc;
+}
+
+@media (min-width: 770px) {
+  body {
+    max-width: 720px;
+  }
 }
